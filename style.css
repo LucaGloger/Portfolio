@@ -74,13 +74,13 @@ body{
     align-items: flex-start;
     justify-content: center;
     flex-direction: column;
-    gap: 5px;
+    gap: 4px;
 }
 
 .buttonIcon{
-    height: 30px;
+    height: 25px;
     aspect-ratio: 1;
-    margin-bottom: -9px;
+    margin-bottom: -7px;
 }
 
 .buttonTopic{
@@ -114,8 +114,10 @@ body{
 }
 
 @media screen and (max-width: 1170px) {
+    /* LeftContainerSide */
+    
     .firstSection{
-        width: 360px;
+        width: 330px;
         flex-direction: column;
     }
 
@@ -127,8 +129,32 @@ body{
     }
 
     .firstText{
-        font-size: 50px;
-        line-height: 55px;
+        font-size: 48px;
+        line-height: 53px;
         width: 100%;
+    }
+
+    .firstInfoContainer{
+        flex-direction: column;
+        gap: 30px;
+        margin-top: 35px;
+    }
+
+    .buttonContainer{
+        width: 100%;
+    }
+
+    /* RightContainerSide */
+
+    .firstImage{
+        height: 600px;
+        width: 330px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: var(--primary-text-color);
+        border-radius: 44px;
+        user-select: none;
+        margin-top: 75px;
     }
 }
