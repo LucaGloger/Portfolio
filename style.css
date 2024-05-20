@@ -3,7 +3,7 @@
 
 :root{
     --primary-backround-color: #131313;
-    --primary-text-color: #F6F6F6;
+    --primary-text-color: #f6f6f6;
     --second-text-color: #9A9A9A;
     --third-text-color: #0A84FF;
 }
@@ -18,7 +18,8 @@ body{
     margin: 0;
     background-color: var(--primary-backround-color);
     font-family: "Roboto", sans-serif;
-    padding: 80px 160px;
+    cursor: crosshair;
+    padding: 80px 0;
 }
 
 .main{
@@ -42,6 +43,7 @@ body{
     align-items: center;
     justify-content: space-between;
     flex-direction: column;
+    margin-right: 171px;
 }
 
 .firstText{
@@ -103,10 +105,30 @@ body{
     justify-content: center;
     background-color: var(--primary-text-color);
     border-radius: 44px;
-    margin-left: 171px;
+    user-select: none;
 }
 
 .imgIcon{
     height: 120px;
     aspect-ratio: 1;
+}
+
+@media screen and (max-width: 1170px) {
+    .firstSection{
+        width: 360px;
+        flex-direction: column;
+    }
+
+    .textContainerSide{
+        height: auto;
+        width: 100%;
+        justify-content: flex-start;
+        margin-right: 0;
+    }
+
+    .firstText{
+        font-size: 50px;
+        line-height: 55px;
+        width: 100%;
+    }
 }
