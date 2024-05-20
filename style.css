@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+:root{
+    --primary-backround-color: #131313;
+    --primary-text-color: #F6F6F6;
+    --second-text-color: #9A9A9A;
+    --third-text-color: #0A84FF;
+}
+
+h1, h2, h3, h4, h5, h6, span, p, input, button, textarea, select, label, a{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    background-color: var(--primary-backround-color);
+    font-family: "Roboto", sans-serif;
+    padding: 80px 160px;
+}
+
+.main{
+    height: auto;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.firstSection{
+    height: auto;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.textContainerSide{
+    height: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.firstText{
+    font-size: 95px;
+    font-weight: 500;
+    color: var(--primary-text-color);
+    line-height: 100px;
+}
+
+.fontText{
+    font-family: "Pacifico", cursive;
+}
+
+.firstInfoContainer{
+    height: auto;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 80px;
+    text-decoration: none;
+}
+
+.buttonContainer{
+    height: auto;
+    width: auto;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.buttonIcon{
+    height: 30px;
+    aspect-ratio: 1;
+    margin-bottom: -9px;
+}
+
+.buttonTopic{
+    font-size: 19px;
+    font-weight: bold;
+    color: var(--primary-text-color);
+    line-height: 0px;
+}
+
+.buttonInfo{
+    font-size: 19px;
+    font-weight: 400;
+    color: var(--second-text-color);
+    line-height: 0px;
+}
+
+.firstImage{
+    height: 600px;
+    width: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--primary-text-color);
+    border-radius: 44px;
+    margin-left: 171px;
+}
+
+.imgIcon{
+    height: 120px;
+    aspect-ratio: 1;
+}
