@@ -183,14 +183,29 @@ body{
 }
 
 .projectStatus{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #b9b4b06f;
+    border-radius: 2rem;
+    border: 2px solid #b7b7b76f;
+    padding: 25px;
+    gap: 10px;
+    /* Font */
     font-size: 19px;
     font-weight: 400;
     color: var(--primary-text-color);
-    background-color: #928e8b83;
-    border-radius: 2.1rem;
-    border: 2px solid #94949483;
-    padding: 25px;
-    
+    user-select: none;
+}
+
+.categoryIcon{
+    height: 23px;
+    aspect-ratio: 1;
+    background: rgb(67,158,255);
+    background: linear-gradient(180deg, rgba(67,158,255,1) 30%, rgba(0,123,255,1) 100%);
+    border-radius: 5rem;
+    padding: 6px;
+    user-select: none;
 }
 
 @media screen and (max-width: 1170px) {
