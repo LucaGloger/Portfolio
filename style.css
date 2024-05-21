@@ -84,7 +84,12 @@ body{
 .buttonIcon{
     height: 25px;
     aspect-ratio: 1;
+    margin-left: -3px;
     margin-bottom: -7px;
+}
+
+.ma{
+    margin-left:-2px;
 }
 
 .buttonTopic{
@@ -121,10 +126,6 @@ body{
 /* ------------ Responsive ------------ */
 
 @media screen and (max-width: 1170px) {
-    body{
-        padding: 40px 0;
-    }
-
     /* ------------ LeftContainerSide ------------ */
     
     .firstSection{
@@ -147,8 +148,8 @@ body{
 
     .firstInfoContainer{
         flex-direction: column;
-        gap: 30px;
-        margin-top: 35px;
+        gap: 60px;
+        margin-top: 40px;
     }
 
     .buttonContainer{
@@ -182,9 +183,14 @@ body{
 }
 
 .projectStatus{
-    font-size: 22px;
-    font-weight: bold;
+    font-size: 19px;
+    font-weight: 400;
     color: var(--primary-text-color);
+    background-color: #928e8b83;
+    border-radius: 2.1rem;
+    border: 2px solid #94949483;
+    padding: 25px;
+    
 }
 
 @media screen and (max-width: 1170px) {
