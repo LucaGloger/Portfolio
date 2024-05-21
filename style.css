@@ -3,7 +3,7 @@
 
 :root{
     --primary-backround-color: #131313;
-    --primary-text-color: #f6f6f6;
+    --primary-text-color: #ffffff;
     --second-text-color: #9A9A9A;
     --third-text-color: #0A84FF;
 }
@@ -19,7 +19,8 @@ body{
     background-color: var(--primary-backround-color);
     font-family: "Roboto", sans-serif;
     cursor: crosshair;
-    padding: 80px 0;
+    padding-top: 80px;
+    /* padding: 80px 0; */
 }
 
 .main{
@@ -28,7 +29,10 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
 }
+
+/* ------------ First Section ------------ */
 
 .firstSection{
     height: auto;
@@ -88,6 +92,7 @@ body{
     font-weight: bold;
     color: var(--primary-text-color);
     line-height: 0px;
+    text-decoration: none;
 }
 
 .buttonInfo{
@@ -113,12 +118,14 @@ body{
     aspect-ratio: 1;
 }
 
+/* ------------ Responsive ------------ */
+
 @media screen and (max-width: 1170px) {
     body{
         padding: 40px 0;
     }
 
-    /* LeftContainerSide */
+    /* ------------ LeftContainerSide ------------ */
     
     .firstSection{
         width: 330px;
@@ -148,7 +155,7 @@ body{
         width: 100%;
     }
 
-    /* RightContainerSide */
+    /* ------------ RightContainerSide ------------ */
 
     .firstImage{
         height: 600px;
@@ -160,5 +167,28 @@ body{
         border-radius: 44px;
         user-select: none;
         margin-top: 75px;
+    }
+}
+
+/* ------------ projectSection ------------ */
+
+.projectSection{
+    height: 300px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.projectStatus{
+    font-size: 22px;
+    font-weight: bold;
+    color: var(--primary-text-color);
+}
+
+@media screen and (max-width: 1170px) {
+    .projectSection{
+        width: 330px;
     }
 }
