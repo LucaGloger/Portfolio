@@ -171,6 +171,33 @@ body{
     }
 }
 
+/* ------------ AboutMeSection ------------ */
+
+.aboutMeSection{
+    display: none;
+    align-items: end;
+    justify-content: center;
+    height: auto;
+    width: 100%;
+}
+
+.aboutImageSection{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.profileImg{
+    height: 400px;
+    aspect-ratio: 1;
+    background-image: url(assets/images/ContactPhotoRetouching-IMG_20240220_084103.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+    transition: all 1s ease-in-out;
+}
+
 /* ------------ projectSection ------------ */
 
 .projectSection{
