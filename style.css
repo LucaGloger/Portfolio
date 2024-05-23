@@ -194,10 +194,11 @@ body{
 
 .profileImg{
     height: 400px;
-    aspect-ratio: 1;
+    width: 330px;
     background-image: url(assets/images/ContactPhotoRetouching-IMG_20240220_084103.jpg);
     background-size: cover;
     background-repeat: no-repeat;
+    background-position: 60%;
     border-radius: 44px;
 }
 
@@ -233,6 +234,22 @@ body{
     font-weight: 400;
     color: var(--second-text-color);
     line-height: 25px;
+}
+
+@media screen and (max-width: 1170px) {
+    .aboutMeSection{
+        width: 330px;
+        flex-direction: column-reverse;
+    }
+
+    .aboutImageSection{
+        width: 330px;
+        margin-right: 0;
+    }
+
+    .aboutTextSection{
+        margin-bottom: 30px;
+    }
 }
 
 /* ------------ projectSection ------------ */
